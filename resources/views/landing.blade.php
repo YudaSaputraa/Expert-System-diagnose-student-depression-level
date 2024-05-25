@@ -63,6 +63,17 @@
 
 <body class="royal_preloader">
 
+    <header id="header" class="clearfix" style="position: relative;">
+        <div id="utility-menu" class="utility-menu relative" style="margin-left: auto;">
+            <span id="sign-in-container" style="display: block; text-align: right; padding: 10px;">
+                <a id="sign-in-toggle" href="/dashboard" class="button">
+                    <strong style="margin-right: 10px;">Log In</strong>
+                </a>
+            </span>
+        </div>
+    </header>
+
+
     <main>
 
         <div class="section full-height mob-height">
@@ -73,10 +84,13 @@
                         <div class="col-md-6">
                             <br>
                             <br>
-                            <h1 class="parallax-fade-top-2 typed">Cek Tingkat <strong>Depresimu</strong> Sekarang!<br><span id="typed-1"></span></h1>
                             <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h1 class="parallax-fade-top-2 typed">Cek Tingkat <strong>Depresimu</strong> Sekarang!<br><span id="typed-1"></span></h1>
                             <div style="margin-left: 12px">
-                                <a href="/form" class="btn btn-dark btn-glow" role="button" style="color: rgb(218, 116, 22);">
+                                <a href="/form " class="btn btn-dark btn-glow" role="button" style="color: rgb(218, 116, 22);">
                                     Isi form
                                 </a>
                             </div>
