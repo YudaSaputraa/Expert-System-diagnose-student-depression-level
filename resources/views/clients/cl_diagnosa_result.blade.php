@@ -3,26 +3,26 @@
 
 @section('cl_content')
 
-    <div class="container">
-       <div class="row mx-auto my-4">
+<div class="container">
+    <div class="row mx-auto my-4">
         <div class="col-lg-10 mx-auto">
 
             <table class="table table-hover">
                 <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Diagnosa ID</th>
-                    <th scope="col">Tingkat Depresi</th>
-                    <th scope="col">Persentase</th>
-                  </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Diagnosa ID</th>
+                        <th scope="col">Tingkat Depresi</th>
+                        <th scope="col">Persentase</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>{{ $diagnosa->diagnosa_id }}</td>
-                    <td> {{ $diagnosa_dipilih["kode_depresi"]->kode_depresi }} | {{ $diagnosa_dipilih["kode_depresi"]->depresi }}</td>
-                    <td>{{ ($diagnosa_dipilih["value"] * 100) }} %</td>
-                  </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{ $diagnosa->diagnosa_id }}</td>
+                        <td> {{ $diagnosa_dipilih["kode_depresi"]->kode_depresi }} | {{ $diagnosa_dipilih["kode_depresi"]->depresi }}</td>
+                        <td>{{ ($diagnosa_dipilih["value"] * 100) }} %</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -45,13 +45,13 @@
                         </thead>
                         <tbody>
                             @foreach ($pakar as $item)
-                                <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>
-                                        {{ $item->kode_gejala }} | {{ $item->kode_depresi }}
-                                    </td>
-                                    <td>{{ $item->mb - $item->md }}</td>
-                                </tr>
+                            <tr>
+                                <td>{{ $loop->iteration }}</td>
+                                <td>
+                                    {{ $item->kode_gejala }} | {{ $item->kode_depresi }}
+                                </td>
+                                <td>{{ $item->mb - $item->md }}</td>
+                            </tr>
                             @endforeach
                         </tbody>
                     </table>
@@ -64,7 +64,7 @@
                             </tr>
                             <tr>
                                 <th scope="col">Gejala</th>
-                            <th scope="col">Nilai</th>
+                                <th scope="col">Nilai</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -105,22 +105,22 @@
             <div class="col-md-10 mx-auto">
                 <div class="card my-4">
                     <div class="card-header">
-                      Hasil
+                        Hasil
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">
-                        {{ $diagnosa_dipilih["kode_depresi"]->kode_depresi }} | {{ $diagnosa_dipilih["kode_depresi"]->depresi }}
+                        <h5 class="card-title">
+                            {{ $diagnosa_dipilih["kode_depresi"]->kode_depresi }} | {{ $diagnosa_dipilih["kode_depresi"]->depresi }}
                         </h5>
-                      <p class="card-text">Jadi dapat disimpulkan bahwa pasien mengalami tingkat depresi yaitu Depresi Ringan dengan tingkat kepastian yaitu <span class="fw-semibold fs-4">{{ round(($hasil["value"] * 100), 2) }}</span> %</p>
-                      {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+                        <p class="card-text">Jadi dapat disimpulkan bahwa pasien mengalami tingkat depresi yaitu {{ $diagnosa_dipilih["kode_depresi"]->depresi }} dengan tingkat kepastian yaitu <span class="fw-semibold fs-4">{{ round(($hasil["value"] * 100), 2) }}</span> %</p>
+                        {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
         @include('components.cl_article')
-        <div >
+        <div>
             <a style="align-content: flex-end" href="/dashboard" class="btn btn-primary"> KEMBALI</a>
         </div>
-       </div>
     </div>
+</div>
 @endsection
