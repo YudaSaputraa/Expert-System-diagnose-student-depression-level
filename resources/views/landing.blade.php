@@ -13,8 +13,7 @@
     <title>Diagnosa Depresi</title>
     <meta name="description" content="Professional Creative Template" />
     <meta name="author" content="IG Design">
-    <meta name="keywords"
-        content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
+    <meta name="keywords" content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
     <meta property="og:title" content="Professional Creative Template" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
@@ -39,11 +38,8 @@
 
     <!-- Web Fonts
  ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 
     <!-- CSS
  ================================================== -->
@@ -69,29 +65,29 @@
 
     <main>
 
-     <div class="section full-height mob-height">
-    <div class="background-parallax" data-enllax-ratio=".5" data-enllax-type="background" data-enllax-direction="vertical"></div>
-    <div class="hero-center-text-wrap">
-        <div class="container text-left">
-            <div class="row">
-                <div class="col-md-6">
-                    <br>
-                    <br>
-                    <h1 class="parallax-fade-top-2 typed">Cek Tingkat <strong>Depresimu</strong> Sekarang!<br><span id="typed-1"></span></h1>
-                    <br>
-                    <div style="margin-left: 12px">
-                        <a href="/form-faq" class="btn btn-dark btn-glow" role="button" style="color: rgb(218, 116, 22);">
-                            Isi form
-                        </a>
+        <div class="section full-height mob-height">
+            <div class="background-parallax" data-enllax-ratio=".5" data-enllax-type="background" data-enllax-direction="vertical"></div>
+            <div class="hero-center-text-wrap">
+                <div class="container text-left">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br>
+                            <br>
+                            <h1 class="parallax-fade-top-2 typed">Cek Tingkat <strong>Depresimu</strong> Sekarang!<br><span id="typed-1"></span></h1>
+                            <br>
+                            <div style="margin-left: 12px">
+                                <a href="/form" class="btn btn-dark btn-glow" role="button" style="color: rgb(218, 116, 22);">
+                                    Isi form
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="text-align: center;"> <!-- Gaya tambahan untuk menengahkan gambar -->
+                            <img src="{{ asset('depresi-assets/depresi.jpg') }}" alt="gambar" style="max-width: 100%; height: auto;"> <!-- Ubah path_to_your_image.jpg sesuai dengan path gambar Anda -->
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6" style="text-align: center;"> <!-- Gaya tambahan untuk menengahkan gambar -->
-                    <img src="{{ asset('depresi-assets/depresi.jpg') }}"  alt="gambar" style="max-width: 100%; height: auto;"> <!-- Ubah path_to_your_image.jpg sesuai dengan path gambar Anda -->
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
 
 

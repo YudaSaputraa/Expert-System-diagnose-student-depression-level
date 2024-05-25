@@ -1,5 +1,5 @@
- <!-- ======= Sidebar ======= -->
- <aside id="sidebar" class="sidebar">
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
 
   <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -12,12 +12,7 @@
 
     <li class="nav-heading">Pengetahuan</li>
 
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="{{ route('cl.form') }}">
-        <i class="bi bi-clipboard-check"></i>
-        <span>Diagnosa</span>
-      </a>
-    </li><!-- End Gejala Page Nav -->
+
     <li class="nav-item">
       <a class="nav-link collapsed" href="{{ route('gejala.index') }}">
         <i class="bi bi-activity"></i>
@@ -37,7 +32,7 @@
         <i class="bi bi-clipboard2-data"></i>
         <span>Hasil Diagnosa</span>
       </a>
-    </li><!-- End Depresi Page Nav -->
+    </li><!-- End Hasil Diagnosa Page Nav -->
 
     <li class="nav-heading">Pengaturan</li>
 
@@ -57,23 +52,18 @@
           </a>
         </li>
       </ul>
-    </li><!-- End Forms Nav -->
+    </li><!-- End Admin Nav -->
 
+    <li class="nav-item">
 
-
-
-    <li class="nav-item" style="nowrap">
-
-      <a class="nav-link collapsed" href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-         <i class="bi bi-box-arrow-right"></i>{{ __('Logout') }}
-     </a>
-     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-       @csrf
-    </form>
-    </li><!-- End F.A.Q Page Nav -->
+      <a class="nav-link collapsed" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+        <i class="bi bi-box-arrow-right"></i> {{ __('Logout') }}
+      </a>
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+      </form>
+    </li><!-- End Logout Nav -->
 
   </ul>
 
-</aside><!-- End Sidebar-->
+</aside>
