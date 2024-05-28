@@ -21,7 +21,7 @@
                         <th scope="row">1</th>
                         <td>{{ $diagnosa->diagnosa_id }}</td>
                         <td> {{ $diagnosa_dipilih["kode_depresi"]->kode_depresi }} | {{ $diagnosa_dipilih["kode_depresi"]->depresi }}</td>
-                        <td>{{ ($diagnosa_dipilih["value"] * 100) }} %</td>
+                        <td>{{ round(($hasil["value"] * 100), 2) }} %</td>
                     </tr>
                 </tbody>
             </table>
