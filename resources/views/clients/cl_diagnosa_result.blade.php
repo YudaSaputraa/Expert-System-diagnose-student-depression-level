@@ -77,25 +77,6 @@
                         </tbody>
                     </table>
 
-                    {{-- Tabel Cf Gabungan --}}
-                    {{-- CF Gabungan --}}
-                    <table class="table table-hover mt-lg-5 border border-info p-3 mx-3">
-                        <thead>
-                            <tr>
-                                <th scope="col">Hasil</th>
-                            </tr>
-                            <tr>
-                                <th scope="col">Nilai</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($cf_kombinasi["cf"] as $key)
-                            <tr>
-                                <td>{{ $key }}</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>
