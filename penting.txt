@@ -1,10 +1,3 @@
-github = https://github.com/Andrian17/sistem-pakar.git
-
-copy file env.example kemudian ubah namanya menjadi .env
-
-buka file .env setting database nya
-
-Pada terminal / CMD jalankan perintah dibawah
 
 php artisan key:generate
 npm install
